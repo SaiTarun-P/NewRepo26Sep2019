@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="PracticeTest" duration-ms="61" started-at="2019-09-26T15:15:37Z" finished-at="2019-09-26T15:15:37Z">
+    <groups>
+      <group name="polymorphism">
+        <method signature="TwentysixSeptember.compileTimePolymorphism()[pri:4, instance:Practice.TwentysixSeptember@68be2bc2]" name="compileTimePolymorphism" class="Practice.TwentysixSeptember"/>
+      </group> <!-- polymorphism -->
+    </groups>
+    <test name="TwentysixSeptember" duration-ms="61" started-at="2019-09-26T15:15:37Z" finished-at="2019-09-26T15:15:37Z">
+      <class name="Practice.TwentysixSeptember">
+        <test-method status="PASS" signature="compileTimePolymorphism()[pri:4, instance:Practice.TwentysixSeptember@68be2bc2]" name="compileTimePolymorphism" duration-ms="22" started-at="2019-09-26T20:45:37Z" finished-at="2019-09-26T20:45:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compileTimePolymorphism -->
+      </class> <!-- Practice.TwentysixSeptember -->
+    </test> <!-- TwentysixSeptember -->
+  </suite> <!-- PracticeTest -->
+</testng-results>

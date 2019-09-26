@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration status="WARN">
+	<Properties>
+		<Property name="log-path">log</Property>
+	</Properties>
+	<Appenders>
+		<Console name="console-log" target="SYSTEM_OUT">
+			<PatternLayout pattern="%d{ABSOLUTE} %5p [%c{1}] %m%n" />
+		</Console>
+
+		<RollingFile name="rollingFile" fileName="${log-path}/rollingFile.log" filePattern="${log-path}/SelPOMFramework-%d{yyyy-MM-dd}.log">
+			<PatternLayout>
+				<pattern>%d{ABSOLUTE} %5p [%c{1}] %m%n</pattern>
+			</PatternLayout>
+			<Policies>
+				<TimeBasedTriggeringPolicy interval="1" modulate="true" />
+			</Policies>
+		</RollingFile>
+
+	</Appenders>
+	<Loggers>
+		<Root level="debug" additivity="false">
+			<AppenderRef ref="console-log" />
+			<AppenderRef ref="rollingFile" />
+		</Root>
+	</Loggers>
+</Configuration>
